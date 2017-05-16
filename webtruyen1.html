@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Truyen tranh online</title>
+	<style type="text/css">
+	body{
+			margin: 0px;			/* Cách lề trái phải 0px; */
+			background: #e9eaed;
+		}
+		.header{	
+			height: 50px;			/* cao 50px */
+		    width: 100%;			/* rộng 100% */
+		    position: relative;
+		    background: #f7850a;	/* nền màu cam */
+		}
+		.logo{
+			position: absolute;
+			float: left;		
+			height: 50px;
+		}
+		.search-pc{
+		    float: right;
+		}
+		.search-box{
+			background: #ffffff;	/* Màu nên ô tìm kiếm:  màu trắng*/
+		    border-radius: 5px;		/* bo trò 4 góc ô tìm kiếm: bo 5px*/
+		    height: 30px;			/* chiều cao ô tìm kiếm */
+		    width: 400px;			/* độ rộng ô tìm kiếm */
+		    margin-top: 10px;		/* Cách trên so với cửa sổ trình duyệt */
+			margin-right: 300px; 	/* Cách phải so với cửa sổ trình duyệt */
+		    float: right;			/* chuyển ô tìm kiếm sang bên phải */
+		} 
+		.input-text{
+		    border: none;			/* Loại bỏ viền ô nhập thông tin */
+		    outline: none;
+		    height: 22px;			/* chiều cao của ô nhập thông tin */
+		    margin: 3px 0px 3px 15px;		
+		    font-size: 12px;
+		    color: #f78305;		  /* màu chữ trong ô tìm kiếm: màu cam	 */
+		    box-sizing: 100px;			
+		    float: left;	     /* Chuyển ô nhập thông tin ra trái so với search-box */
+		}
+		.btn-search{
+			height: 23px;
+    		width: 23px;
+    		margin: 4px 30px 0 2%;
+    		float: right;
+		}
+		#menu ul{
+		list-style-type: none;
+		background: #F8F8FF;
+		text-align: left;
+		margin-bottom:1em;
+	}
+	#menu ul li{
+		color: #F8F8FF;
+		display: inline-table;
+		width: 150px;
+		height: 50px;
+		line-height: 50px;
+		position: relative;
+	}
+	#menu ul li a{
+		color: #000000;		/*mau chu*/
+		text-decoration: none;
+		display: block;
+	}
+	#menu ul li a:hover{
+		color: #FF7F24;
+	}
+	#menu ul li > .sub-menu{
+		display: none;
+		position: absolute; /* hien thi cac item trong  muc the loai */
+	}
+	#menu ul li:hover .sub-menu{
+		display: block;
+	}
+	.aaa{
+		background: #ffffff;
+		color: #FF9900	;
+		width: 100%;
+		height: 20px;
+		padding: 25px;
+		margin-bottom: 1em;
+	}
+/*	.row {
+	 	overflow: auto;
+	 	margin: 1.5em auto;
+		}
+		/*==Chia cột phần content==*/
+/*row {
+	 overflow: auto;
+	 margin: auto;
+	}
+	.row .col {
+	 float: left;
+	 width:28%;
+	 margin-left: 3em;
+	}
+	.row .col:last-child {
+	 float: right;
+	 margin-right:0;
+	}
+*/
+	</style>
+</head>
+
+<body>
+	<div class="header"> <!-- div header chứa div "logo" và div "search-pc" -->
+		<div class="logo">
+			<a href=""><img src="C:\Users\hoang_000\Desktop\bootstap\bootstrap-3.3.7-dist\manga.png" alt="" height=50px; width="100px"></a>
+		</div>
+		<div class="search-pc">
+			<div class="search-box">
+				<form action="">
+					<input type="text" placeholder="Nhập truyện cần tìm..." class="input-text">
+					<a href=""><img src="C:\Users\hoang_000\Desktop\bootstap\bootstrap-3.3.7-dist\search-icon.png" alt="" class="btn-search"></a>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="menu">
+			<ul>
+				<li>
+				<a href="#">Trang chủ</a></li>
+				<li>
+					<a href="#">Thể loại</a>
+					<ul class ="sub-menu">
+						<li><a href="#">Truyện full</a></li>
+						<li><a href="#">Truyện full</a></li>
+						<li><a href="#">Truyện full</a></li>
+						<li><a href="#">Truyện full</a></li>
+						<li><a href="#">Truyện full</a></li>
+						<li><a href="#">Truyện full</a></li>
+						<li><a href="#">Truyện full</a></li>
+						<li><a href="#">Truyện full</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Truyện full</a></li>
+				<li><a href="#">Truyện con gái</a></li>
+				<li><a href="#">Truyện con trai</a></li>
+				<li><a href="#">Truyện đọc</a></li>
+			</ul>
+		</div><!--#menu-->
+	<div>
+		<ul>
+			<li> <a href="#"><img src="naruto.png" alt =""/></a>
+				<div class="overlay">
+					<p><a href="#"> caption 1</a> </p>
+				</div>
+				
+			</li>
+			<!--#anh1-->
+			<li>
+				<li> <a href="#"><img src="one pice.png" alt =""/></a>
+				<div class="overlay">
+					<p><a href="#"> caption 2</a> </p>
+				</div>
+			</li>
+			<!--#anh 2-->
+			<li>
+				<li> <a href="#"><img src="sao.png" alt =""/></a>
+				<div class="overlay">
+					<p><a href="#"> caption 3</a> </p>
+				</div>
+			</li>
+			<!--#anh 3-->
+			<li>
+				<li> <a href="#"><img src="1.png" alt =""/></a>
+				<div class="overlay">
+					<p><a href="#"> caption 4</a> </p>
+				</div>
+			</li>
+			<!--#anh 4-->
+			<li>
+				<li> <a href="#"><img src="2.png" alt =""/></a>
+				<div class="overlay">
+					<p><a href="#"> caption 5</a> </p>
+				</div>
+			</li>
+			<!--#anh 5-->
+			<li>
+				<li> <a href="#"><img src="3.png" alt =""/></a>
+				<div class="overlay">
+					<p><a href="#"> caption 6</a> </p>
+				</div>
+			</li>
+			<!--#anh 6-->
+			<li>
+				<li> <a href="#"><img src="4.png" alt =""/></a>
+				<div class="overlay">
+					<p><a href="#"> caption 7</a> </p>
+				</div>
+			</li>
+			<!--#anh 7-->
+			<a href="#" class="prev">&nbsp;></a>
+		</ul>
+	</div><!--# div anh-->
+
+</body>
+</html>
